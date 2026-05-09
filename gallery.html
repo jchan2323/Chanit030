@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Gallery</title>
+<link rel="stylesheet" href="style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  header {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+  }
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+  .nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  main {
+    padding: 20px;
+    text-align: center;
+  }
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  .gallery-item {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  .gallery-item img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  .caption {
+    margin-top: 8px;
+    font-size: 0.95em;
+    color: #555;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Justin Chan</h1>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="work.html">Work</a>
+    <a href="contact.html">Contact</a>
+    <a href="gallery.html">Gallery</a>
+  </nav>
+</header>
+<main>
+  <h2>Photo Gallery</h2>
+  <p>A few moments and scenes I've captured.</p>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="IMG_5670.JPG" alt="Mountain landscape with clear sky">
+      <div class="caption">A hike I did over the summer with 2 of my best friends in the Adirondacks.</div>
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_4302.JPG" alt="Black cat relaxing indoors">
+      <div class="caption">Me and my cat named Franky chilling. </div>
+    </div>
+    <div class="gallery-item">
+      <img src="IMG_3983.JPG" alt="Butterfly on red flower">
+      <div class="caption">A beautiful butterfly I saw at the aquarium. </div>
+    </div>
+  </div>
+</main>
+</body>
+</html>
