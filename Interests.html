@@ -5,7 +5,68 @@
 <title>Justin Chan</title>
 <link rel="stylesheet" href="style.css">
 </head>
-
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+  }
+  header {
+    background-color: #111;
+    padding: 15px;
+    text-align: center;
+  }
+  header h1 {
+    color: white;
+    margin: 0;
+  }
+  .nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  .nav a:hover {
+    text-decoration: underline;
+  }
+  h2 {
+    text-align: center;
+    margin-top: 40px;
+  }
+  select {
+    display: block;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1em;
+  }
+  #result-count {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #items-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 40px; /* adds space around content */
+    box-sizing: border-box;
+  }
+  .item-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .item-card h3 {
+    margin-top: 0;
+  }
+  .item-tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    font-size: 0.85em;
+  }
+</style>
 <body>
 <header>
 <h1>Justin Chan</h1>
@@ -23,7 +84,6 @@
 
 <h2>Interests</h2>
 
-<!-- Dropdown menu -->
 <select onchange="filterItems(this.value)">
   <option value="">All</option>
   <option value="Health">Health</option>
@@ -31,10 +91,8 @@
   <option value="Lifestyle">Lifestyle</option>
 </select>
 
-<!-- Placeholder for results -->
 <p id="result-count"></p>
 
-<!-- Container for cards -->
 <div id="items-container"></div>
 
 <script src="script.js"></script>
