@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Justin Chan</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+<h1>Justin Chan</h1>
+<nav class="nav">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="work.html">Work</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
+
+
+<h2>Interests</h2>
+
+<!-- Dropdown menu -->
+<select onchange="filterItems(this.value)">
+  <option value="">All</option>
+  <option value="Health">Health</option>
+  <option value="Business">Business</option>
+  <option value="Lifestyle">Lifestyle</option>
+</select>
+
+<!-- Placeholder for results -->
+<p id="result-count"></p>
+
+<!-- Container for cards -->
+<div id="items-container"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
