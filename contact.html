@@ -39,11 +39,26 @@
 </header>
 
 <main>
-<section class="section-box">
-<h2>Contact</h2>
-<p>Email: Jchan23@pride.hofstra.edu</p>
-<p>Brand: <a href="https://calus.us/" target="_blank">https://calus.us/</a></p>
-</section>
+<main>
+  <section class="section-box">
+    <h2>Contact</h2>
+
+    <p>Email: Jchan23@pride.hofstra.edu</p>
+
+    <p>
+      Brand:
+      <a href="[calus.us](https://calus.us/)"
+         target="_blank"
+         onclick="gtag('event', 'brand_link_click', {
+           link_text: 'Calus',
+           link_url: '[calus.us](https://calus.us/)',
+           page_location: window.location.href
+         })">
+         [calus.us](https://calus.us/)
+      </a>
+    </p>
+  </section>
 </main>
+
 </body>
 </html>
